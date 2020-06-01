@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="../css/main.css" />
+    <script src="../js/game1.js"></script>
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Game 1</title>
+  </head>
+  <body>
+    <header class="menuhead">
+      <div class="menudiv">
+        <nav class="menunav">
+          <ul class="menuul">
+            <li>
+              <a href="../index.html" target="_parent">Home</a>
+            </li>
+
+            <li>
+              <a href="./game2.html">Game 2</a>
+            </li>
+            <li>
+              <a href="./game3.html">Game 3</a>
+            </li>
+             <li>
+              <a href="./game4.html">Game 4</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <form>
+        <div>
+          <button class="startGame" onclick="StartGame()" id="startbtn">
+            Start New Game
+          </button>
+        </div>
+
+        <div class="game1">
+          <div class="mygame">
+            <label class="centerText">Your Selection</label> <br />
+            <div class="mygame1">
+              <label>
+                <input
+                  type="radio"
+                  name="mygame"
+                  id="rock"
+                  value="R"
+                  onclick="radioHandle() "
+                />
+                <img src="../images/rock.jpeg" height="50px" alt="" />
+              </label>
+              <br />
+              <label>
+                <input
+                  type="radio"
+                  name="mygame"
+                  id="Scissors"
+                  value="S"
+                  onclick="radioHandle() "
+                />
+                <img
+                  src="../images/scissors.jpeg"
+                  height="50px"
+                  alt=""
+                /> </label
+              ><br />
+              <label>
+                <input
+                  type="radio"
+                  name="mygame"
+                  id="papers"
+                  value="P"
+                  onclick="radioHandle() "
+                />
+                <img src="../images/paper.jpeg" height="50px" alt="" />
+              </label>
+            </div>
+          </div>
+          <div class="result" id="result">
+            <label for="" class="centerText">Result</label> <br />
+            <div class="result1" id="result1"></div>
+          </div>
+          <div class="pcgame" id="pcgame">
+            <label class="centerText">Computer Selection</label> <br />
+            <div class="pcgame1" id="pcgame1"></div>
+          </div>
+        </div>
+      </form>
+    </main>
+    <footer>
+      <div class="score">
+        <div class="score1">
+          <label for="winscore">
+            <img
+              src="../images/thumsup.png"
+              alt=""
+              height="70px"
+              style="vertical-align: middle;"
+            />
+          </label>
+          <input type="text" name="" id="winscore" readonly value="0" />
+        </div>
+        <div class="score1">
+          <label for="drawcore">
+            Draw
+          </label>
+          <input type="text" name="" id="drawcore" readonly value="0" />
+        </div>
+        <div class="score1">
+          <label for="lostcore">
+            <img
+              src="../images/thumsdown.png"
+              alt=""
+              height="70px"
+              style="vertical-align: middle;"
+            />
+          </label>
+          <input type="text" name="" id="lostscore" readonly value="0" />
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

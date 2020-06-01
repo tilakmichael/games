@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="../js/game3.js"></script>
+    <link rel="stylesheet" href="../css/game3.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Snake & Ladders</title>
+  </head>
+  <body class="g3body">
+    <header class="menuhead">
+      <div class="menudiv">
+        <nav class="menunav">
+          <ul class="menuul">
+            <li>
+              <a href="../index.html">Home</a>
+            </li>
+
+            <li>
+              <a href="./game1.html">Game 1</a>
+            </li>
+            <li>
+              <a href="./game2.html">Game 2</a>
+            </li>
+             <li>
+              <a href="./game4.html">Game 4</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <!-- Restart button current player -->
+      <div class="g3mainhead">
+        <div class="g3mainheaddiv">
+          <button
+            type="button"
+            class="button30 large lightbluebg"
+            onclick="restartGame()"
+          >
+            Restart Game
+          </button>
+        </div>
+        <div class="g3mainheaddiv">
+          <span class="bold">Previous Player:</span>
+          <span class="bold" id="pname"></span>
+          <span class="bold">Next Player:</span>
+          <span class="bold" id="npname"></span>
+        </div>
+      </div>
+      <!--  Game Area -->
+      <div class="gameArea lightbluebg">
+        <div class="game">
+          <table id="gametable" class="gameTable" border="1">
+            <thead></thead>
+
+            <tbody id="gamebody"></tbody>
+          </table>
+        </div>
+      </div>
+      <!-- Button To Role -->
+    </main>
+
+    <div class="scoreArea">
+      <div>
+        <div class="divrolebtn">
+          <button
+            type="button"
+            class="rollbtn bluebtn"
+            id="rollbtn"
+            onclick="rollDice() ; setNextPlayer() "
+          >
+            <span> <img src="../images/dice.jpeg" alt="" height="25px" /></span>
+            &nbsp; Roll Dice &nbsp;
+            <span> <img src="../images/dice.jpeg" alt="" height="25px" /></span>
+          </button>
+        </div>
+      </div>
+      <!--  Score numbers -->
+      <div class="g3mainhead">
+        <div class="g3mainheaddiv border">
+          <label for="" id="playername1"></label> &nbsp;
+          <label for="ipdice1">Dice</label>
+          <input type="text" name="" id="ipdice1" value="0" />
+          <label for="ipcount1">count</label>
+          <input type="text" name="" id="ipcount1" value="0" /><br />
+          <label for="ipprevval1">Previous Score</label>
+          <input type="text" name="" id="ipprevval1" value="0" /> <br />
+          <label for="ipcurvval1">Current Score</label>
+          <input type="text" name="" id="ipcurvval1" value="0" />
+        </div>
+        <div class="g3mainheaddiv border">
+          <label for="" id="playername2"></label> &nbsp;
+          <label for="ipdice2">Dice</label>
+          <input type="text" name="" id="ipdice2" value="0" />
+          <label for="ipcount2">count</label>
+          <input type="text" name="" id="ipcount2" value="0" /><br />
+          <label for="ipprevval2">Previous Score</label>
+          <input type="text" name="" id="ipprevval2" value="0" /> <br />
+          <label for="ipcurvval2">Current Score</label>
+          <input type="text" name="" id="ipcurvval2" value="0" />
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <audio id="myAudioLadder">
+        <source src="../audio/plane.mp3" type="audio/mpeg" />
+      </audio>
+      <audio id="myAudioSnake">
+        <source src="../audio/snake.mp3" type="audio/mpeg" />
+      </audio>
+
+      <audio id="winner">
+        <source src="../audio/applause.mp3" type="audio/mpeg" />
+      </audio>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<!-- saved from url=(0036)http://127.0.0.1:5500/src/game4.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <script src="./Snake LAdder_files/game4.js"></script>
+    <link rel="stylesheet" href="./Snake LAdder_files/common.css">
+    <link rel="stylesheet" href="./Snake LAdder_files/game4.css">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake LAdder</title>
+  </head>
+  <body>
+    <header class="menuhead">
+      <div class="menudiv">
+        <nav class="menunav">
+          <ul class="menuul">
+            <li>
+              <a href="http://127.0.0.1:5500/index.html" target="_parent">Home</a>
+            </li>
+            <li>
+              <a href="http://127.0.0.1:5500/src/game1.html">Game 1 </a>
+            </li>
+            <li>
+              <a href="http://127.0.0.1:5500/src/game2.html">Game 2</a>
+            </li>
+            <li>
+              <a href="http://127.0.0.1:5500/src/game3.html">Game 3</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <div id="qadiv" style="display: none;">
+        <div class="gamediv" id="qasect">
+          <form id="qaForm">
+            <div id="qaformdiv"></div>
+            <div>
+              <button type="button" class="blueBtn" onclick="qaFormSubmit() ">
+                Submit
+              </button>
+              &nbsp; &nbsp;
+              <button type="reset" class="greyBtn">Reset</button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div id="bodydiv" style="display: block;">
+        <div class="gamediv">
+          <div class="gamehead">
+              <div class="gameheaddiv div30">
+                 <button type="button" id="resetbtn" onclick="resetGame()" class="bold bigbtn greyBtn">Reset Game</button>
+              </div>
+         
+              <div class="gameheaddiv div70 ">
+                <span class="bold">Previous Player:</span>
+                <span class="bold" id="pname"></span> &nbsp;
+                <span class="bold">Next Player:</span>
+                <span class="bold" id="npname"></span>
+              </div>
+             
+          <div>
+            <hr>
+          </div>
+            <div>
+                <table>
+                   <tbody id="tbody">
+                      
+                   <tr id="idrow10"><td id="idcol100">100 </td><td id="idcol99">99 </td><td id="idcol98">98 </td><td id="idcol97">97 </td><td id="idcol96">96 </td><td id="idcol95">95 </td><td id="idcol94">94 </td><td id="idcol93">93 </td><td id="idcol92">92 </td><td id="idcol91">91 </td></tr><tr id="idrow9"></tr><tr id="idrow8"><td id="idcol80">80 </td><td id="idcol79">79 </td><td id="idcol78">78 </td><td id="idcol77">77 </td><td id="idcol76">76 </td><td id="idcol75">75 </td><td id="idcol74">74 </td><td id="idcol73">73 </td><td id="idcol72">72 </td><td id="idcol71">71 </td></tr><tr id="idrow7"></tr><tr id="idrow6"><td id="idcol60">60 </td><td id="idcol59">59 </td><td id="idcol58">58 </td><td id="idcol57">57 </td><td id="idcol56">56 </td><td id="idcol55">55 </td><td id="idcol54">54 </td><td id="idcol53">53 </td><td id="idcol52">52 </td><td id="idcol51">51 </td></tr><tr id="idrow5"></tr><tr id="idrow4"><td id="idcol40">40 </td><td id="idcol39">39 </td><td id="idcol38">38 </td><td id="idcol37">37 </td><td id="idcol36">36 </td><td id="idcol35">35 </td><td id="idcol34">34 </td><td id="idcol33">33 </td><td id="idcol32">32 </td><td id="idcol31">31 </td></tr><tr id="idrow3"></tr><tr id="idrow2"><td id="idcol20">20 </td><td id="idcol19">19 </td><td id="idcol18">18 </td><td id="idcol17">17 </td><td id="idcol16">16 </td><td id="idcol15">15 </td><td id="idcol14">14 </td><td id="idcol13">13 </td><td id="idcol12">12 </td><td id="idcol11">11 </td></tr><tr id="idrow1"></tr></tbody>
+                </table>
+
+            </div>
+           
+
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer></footer>
+  <!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>

@@ -1,0 +1,86 @@
+body {
+  height: 100%;
+  width: 100%;
+}
+
+.gamediv {
+  height: 100%;
+  width: 100%;
+  border: 1px black solid;
+  /* margin: 2px 5px; */
+}
+
+.gamehead {
+  height: 10%;
+  width: 100%;
+  border: 1px blue solid;
+  float: left;
+}
+
+.gameheaddiv {
+  display: inline-block;
+  /* border: 1px green solid; */
+}
+.div30 {
+  left: 0p;
+  width: 30%;
+}
+
+.div70 {
+  width: 65%;
+}
+
+.gameBody {
+  height: 90%;
+  width: 100%;
+  border: 1px red solid;
+}
+.bold {
+  font-weight: bold;
+}
+
+.bigbtn {
+  width: 100%;
+  height: 100%;
+}
+.gameTable {
+  height: 70vh;
+  width: 98vw;
+}
+/* .gamebody {
+  height: 100%;
+  width: 100%;
+}
+
+.tbody tr {
+  height: calc(0.75 * 8.1428vh);
+}
+.tbody tr td {
+  width: auto;
+}
+*/
+tbody tr td img {
+  height: 3vh;
+}
+
+.fullBtn {
+  width: 98%;
+  height: 4vh;
+  margin-bottom: 5px;
+}
+
+.score {
+  float: left;
+  width: 100%;
+}
+
+.scorediv {
+  display: inline-block;
+  border-right: 2px white solid;
+}
+
+#dicebtn:disabled,
+#dicebtn[disabled] {
+  background-color: grey;
+  color: white;
+}

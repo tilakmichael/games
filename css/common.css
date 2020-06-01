@@ -1,0 +1,92 @@
+.menuhead {
+  top: 0;
+  background: rgb(141, 228, 174);
+}
+
+.menuul {
+  list-style: none;
+  text-align: end;
+  margin-right: 50px;
+}
+
+.menuul li {
+  display: inline-block;
+  margin-left: 10px;
+  /*background-color: rgb(142, 197, 131); */
+  border-left: 2px black solid;
+  padding-left: 10px;
+}
+.menuul li a {
+  text-decoration: none;
+  color: white;
+}
+
+.menuul li:hover {
+  background-color: rgb(65, 71, 71);
+}
+
+.greenBg,
+.greenBtn {
+  background-color: green;
+  color: white;
+}
+
+.blueBg,
+.blueBtn {
+  background-color: blue;
+  color: white;
+}
+.redBg,
+.redBtn {
+  background-color: red;
+  color: white;
+}
+
+.greyBg,
+.greyBtn {
+  background-color: grey;
+  color: white;
+}
+
+.lblueBg,
+.lbueBtn {
+  background-color: rgb(110, 150, 163);
+  color: white;
+}
+
+.yellowBg,
+.yellowBtn {
+  background-color: rgb(197, 199, 71);
+  color: white;
+}
+
+.green {
+  color: green;
+}
+
+.blue {
+  color: blue;
+}
+
+.red {
+  color: red;
+}
+
+.grey {
+  color: grey;
+}
+.lblue {
+  color: rgb(110, 150, 163);
+}
+.yellow {
+  color: rgb(197, 199, 71);
+}
+
+.blinking {
+  animation: blinker 1s linear infinite;
+}
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}

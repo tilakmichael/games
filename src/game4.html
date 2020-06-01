@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="../js/game4.js"></script>
+    <link rel="stylesheet" href="../css/common.css" />
+    <link rel="stylesheet" href="../css/game4.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Snake LAdder</title>
+  </head>
+  <body>
+    <header class="menuhead">
+      <div class="menudiv">
+        <nav class="menunav">
+          <ul class="menuul">
+            <li>
+              <a href="../index.html" target="_parent">Home</a>
+            </li>
+            <li>
+              <a href="./game1.html">Game 1 </a>
+            </li>
+            <li>
+              <a href="./game2.html">Game 2</a>
+            </li>
+            <li>
+              <a href="./game3.html">Game 3</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <div id="qadiv">
+        <div class="gamediv" id="qasect">
+          <form id="qaForm">
+            <div id="qaformdiv"></div>
+            <div>
+              <button type="button" class="blueBtn" onclick="qaFormSubmit() ">
+                Submit
+              </button>
+              &nbsp; &nbsp;
+              <button type="reset" class="greyBtn">Reset</button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div id="bodydiv">
+        <div class="gamediv">
+          <div class = "gamehead">
+              <div class="gameheaddiv div30">
+                 <button type="button" id="resetbtn" onclick="resetGame()" class="bold bigbtn greyBtn">Reset Game</button>
+              </div>
+         
+              <div class="gameheaddiv div70 ">
+                <span class="bold">Previous Player:</span>
+                <span class="bold" id="ppname"></span> &nbsp;
+                <span class="bold">Current Player:</span>
+                <span class="bold" id="cpname"></span>
+              </div>
+             
+          <div>
+          <hr>
+          </div class="gameBody lightbluebg">
+            <div>
+                <table border= "1" class="gameTable lblueBg">
+                   <tbody id="tbody" class="tbody">
+                      
+                   </tbody>
+                </table>
+
+            </div>
+            <!-- Score div -->
+            <div>
+              <div class="rolldiv">
+                  <button type="buttone" id="dicebtn" class="blueBtn fullBtn"  onclick="rollDice()"> Roll Dice</button>
+              </div>
+              <div  class="score" id="score">
+                
+      
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <!-- <div>
+        <div class="rolldiv">
+            <button type="buttone" id="dicebtn" class="blueBtn fullBtn"  onclick="rollDice()"> Roll Dice</button>
+        </div>
+        <div  class="score" id="score">
+          
+
+        </div>
+      </div> -->
+
+      <div>
+        <audio id="myAudioLadder">
+          <source src="../audio/plane.mp3" type="audio/mpeg" />
+        </audio>
+        <audio id="myAudioSnake">
+          <source src="../audio/snake.mp3" type="audio/mpeg" />
+        </audio>
+  
+        <audio id="winner">
+          <source src="../audio/applause.mp3" type="audio/mpeg" />
+        </audio>
+
+        <audio id="error">
+          <source src="../audio/error.mp3" type="audio/mpeg" />
+        </audio>
+
+        <audio id="next">
+          <source src="../audio/next.mp3" type="audio/mpeg" />
+        </audio>
+      </div>
+    </footer>
+  </body>
+</html>

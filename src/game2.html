@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="../css/main.css" />
+    <script src="../js/game2.js"></script>
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Game 2</title>
+  </head>
+  <body>
+    <header class="menuhead">
+      <div class="menudiv">
+        <nav class="menunav">
+          <ul class="menuul">
+            <li>
+              <a href="../index.html">Home</a>
+            </li>
+
+            <li>
+              <a href="./game1.html">Game 1</a>
+            </li>
+            <li>
+              <a href="./game3.html">Game 3</a>
+            </li>
+             <li>
+              <a href="./game4.html">Game 4</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <form>
+        <div>
+          <button class="startGame" onclick="resetGame()">
+            Start New Game
+          </button>
+        </div>
+
+        <div class="game2">
+          <div class="gam2Game" id="g2dgame">
+            <table id="g2tb" class="gameTble" border="1">
+              <thead></thead>
+
+              <tbody id="g2tbdy"></tbody>
+            </table>
+          </div>
+          <div class="gambtn" id="gbtn">
+            <div>
+              <button
+                onclick="diceRoll()"
+                type="button"
+                class="btn"
+                id="rollbtn"
+              >
+                Roll Dice
+              </button>
+            </div>
+          </div>
+          <div class="gam2score" id="g2dscore">
+            <div class="rolldice">
+              <label for="dicescore">Dice Rolled</label>
+              <input type="text" name="dicescore" id="dicescore" />
+            </div>
+            <div>
+              <label for="totalscore">Previous Score</label>
+              <input type="text" name="prevscore" id="prevscore" />
+            </div>
+            <div>
+              <label for="totalscore">Total Score</label>
+              <input type="text" name="totalscore" id="totalscore" />
+            </div>
+          </div>
+        </div>
+      </form>
+    </main>
+    <footer>
+      <audio id="myAudioLadder">
+        <source src="../audio/Goose.mp3" type="audio/mpeg" />
+      </audio>
+      <audio id="myAudioSnake">
+        <source src="../audio/Pain.mp3" type="audio/mpeg" />
+      </audio>
+    </footer>
+  </body>
+</html>

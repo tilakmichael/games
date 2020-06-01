@@ -1,0 +1,16 @@
+[
+    {
+        "name: "Tilak" , 
+        "age": 50  , 
+        "weight": 90 ,
+        "gender": "M"
+
+    },
+    {
+        "name:"Michael" , 
+        "age": 30  , 
+        "weight": 90 , 
+        "gender": "M"
+    }
+
+]

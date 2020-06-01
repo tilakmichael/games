@@ -1,0 +1,140 @@
+.menuhead {
+  top: 0;
+  background: rgb(141, 228, 174);
+}
+
+.menuul {
+  list-style: none;
+  text-align: end;
+  margin-right: 50px;
+}
+
+.menuul li {
+  display: inline-block;
+  margin-left: 10px;
+  /*background-color: rgb(142, 197, 131); */
+  border-left: 2px black solid;
+  padding-left: 10px;
+}
+.menuul li a {
+  text-decoration: none;
+  color: white;
+}
+
+.menuul li:hover {
+  background-color: rgb(65, 71, 71);
+}
+
+.g3body {
+  height: 100%;
+  width: 100%;
+}
+
+.g3mainhead {
+  display: table;
+  table-layout: fixed;
+  width: 100%;
+  background-color: aqua;
+  /* margin: 0 auto; */
+}
+.g3mainheaddiv {
+  display: table-cell;
+  /* width: 100%; */
+}
+.greenbg {
+  background-color: green;
+}
+.redbg {
+  background-color: red;
+}
+.bluebg {
+  background-color: blue;
+}
+.large {
+  height: 30px;
+  font-size: large;
+  font-weight: bold;
+}
+.lightbluebg {
+  background-color: lightblue;
+}
+.button30 {
+  width: 30rem;
+}
+
+.red {
+  color: red;
+}
+.green {
+  color: green;
+}
+
+.blue {
+  color: blue;
+}
+
+.gray {
+  color: gray;
+}
+
+.gameArea {
+  height: 100%;
+  width: 100%;
+  margin-top: 5px;
+}
+
+.gameTable {
+  width: 100%;
+  height: 90%;
+}
+
+.gameTable tr td {
+  height: 50px;
+}
+
+.bluebtn {
+  background-color: rgb(62, 62, 231);
+  color: white;
+}
+
+.redbtn {
+  background-color: rgb(204, 80, 22);
+  color: white;
+}
+
+.greybtn {
+  background-color: grey;
+  color: white;
+}
+
+.greenbtn {
+  background-color: grey;
+  color: white;
+}
+
+.rollbtn {
+  margin-top: 10px;
+  font-weight: bolder;
+  height: 40px;
+  width: 100%;
+  /* background-color: rgb(62, 62, 231); */
+  color: white;
+}
+.rollbtn:disabled,
+.rollbtn[disabled] {
+  background-color: gray;
+}
+
+.border {
+  border: 1px solid black;
+}
+
+.blinking {
+  animation: blinker 1s linear infinite;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}

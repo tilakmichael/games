@@ -1,0 +1,151 @@
+.game1 {
+  height: 500px;
+  width: 100%;
+  border: 1px red solid;
+  margin-top: 10px;
+  display: flex;
+}
+
+.result,
+.pcgame,
+.mygame {
+  height: 90%;
+  width: 33%;
+  border: 1px blue solid;
+  float: right;
+}
+
+.menuhead {
+  top: 0;
+  background: rgb(141, 228, 174);
+}
+
+.menudiv {
+}
+
+.menuul {
+  list-style: none;
+  text-align: end;
+  margin-right: 50px;
+}
+
+.menuul li {
+  display: inline-block;
+  margin-left: 10px;
+  /*background-color: rgb(142, 197, 131); */
+  border-left: 2px black solid;
+  padding-left: 10px;
+}
+.menuul li a {
+  text-decoration: none;
+  color: white;
+}
+
+.menuul li:hover {
+  background-color: rgb(65, 71, 71);
+}
+
+.startGame {
+  background-color: lightblue;
+  font-weight: bold;
+  height: 50px;
+  width: 100%;
+}
+
+.centerText {
+  font-size: large;
+  margin-left: 100px;
+}
+.result1,
+.pcgame1,
+.mygame1 {
+  top: 30%;
+  position: absolute;
+  padding: 20px;
+  font-size: large;
+  font-weight: bolder;
+}
+
+.score {
+  height: 15%;
+  width: 100%;
+  position: absolute;
+  font-size: large;
+  font-weight: bolder;
+  border: 1px green solid;
+  display: flex;
+}
+
+.score1 {
+  height: 100%;
+  width: 32%;
+  //border: 1px red solid;
+}
+
+.winner {
+  color: green;
+}
+
+.loser {
+  color: red;
+}
+
+/******************    GAME 2 ***********************/
+
+.game2 {
+  width: 100%;
+  height: 100%;
+  border: 1px red solid;
+  margin: 10px;
+}
+.gam2Game {
+  height: 80%;
+  border: 1px blue solid;
+}
+
+.gam2score {
+  height: 20%;
+  /* border: 1px green solid; */
+  display: flex;
+  margin: 20px;
+}
+
+.gameTble {
+  width: 100%;
+  height: 90%;
+}
+.gameTble tr td {
+  height: 50px;
+}
+
+.redcol {
+  background-color: red;
+}
+.greencol {
+  background-color: green;
+}
+
+.rolldice {
+  margin-right: 20px;
+}
+
+.btn {
+  margin-top: 20px;
+  background-color: rgb(62, 62, 231);
+  color: white;
+  font-weight: bolder;
+  height: 40px;
+  width: 100%;
+}
+
+.blinking {
+  animation: blinker 1s linear infinite;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+
+/* ************ Game 3 */
